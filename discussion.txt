@@ -1,0 +1,44 @@
+Recursion
+1. In your own words, what is Recursion?
+It is a method/function of solving problems by using the same method repeatedly until the problem is solved on the lowest level. Since it is the same method, the function can simply call itself until the Base Case is satisfied. 
+2. Why is it necessary to have a Base Case?
+Base Case allows the function (and you) to know that you've reached the innermost level of the problem (the tiniest Russian doll) and once that is solved, you can now go back through the layers you came through and solve those. 
+
+Graphs
+1. What is a Graph?
+A graph is the representation of how nodes/things/people related to each other.
+2. How is a Graph different from a Tree?
+A Tree is a type of Graph; all trees are graphs but not all graphs are trees. Graphs do not have hierarhies, are cyclic or acyclic and directed or undirected.
+3. Give an example of something that would be good to model with a Graph.
+The different routes one can take to go to all the famous bakeries in San Franciso. Each bakery would be a node and the arc would connect the bakeries together; Tartine would be connected to Mr. Holmes and Neighbor Bakehouse.
+
+Performance of Different Data Structures
+
+Python List (Array)             O(1)    O(n)    O(1)    O(n)    O(n)    O(1) 
+Linked List                     O(n)    O(n)    O(1)    O(1)    O(1)    O(n)
+Doubly-Linked List              O(n)    O(n)    O(1)    O(1)    O(1)    O(1)
+Queue (as Array)                X       X       O(1)    X       O(n)    X
+Queue (as LL or DLL)            X       X       O(1)    X       O(1)    X
+Stack (as Array, LL, or DLL)    X       X       O(1)    X       X       O(1)
+Deque (as DLL)                  X       X       O(1)    O(1)    O(1)    O(1)
+
+Dictionary (Hash Map)   O(1)    O(1)    O(1)    O(n)    medium
+Set (Hash Map)          O(1)    O(1)    O(1)    O(n)    medium                
+Binary Search trees     O(lg n) O(n)    O(n)    O(1)    small                  
+Tree                    O(n)    O(1)    O(1)    O(1)    small
+
+
+Sorting
+1. Describe in words how the Bubble Sort algorithm works.
+We compare two items in a list of n items and then move the largest one to the right. After we've gone through it (n(n-1))/2 times, the list would be sorted!
+2. Describe in words how the Merge Sort algorithm works.
+You'll need 2 sorted lists. Compare the first elements of each list, whatever is smaller is appended to a third list. In the end, the two inital lists will be empty and the third will have all of the elements, sorted.
+3. Describe in words how the Quick Sort algorithm works.
+A pivot is picked at random and the remaining items are moved around so that the elements to the left of the pivot are lesser and the elements to the right are greater. Then, another pivot is picked and the process repeats itself until all the items are sorted.
+
+
+Git Branching
+1. Give an instance when you would use git branching.
+I got a job as a junior developer (yay!). They want me to work on a tiny part of an ongoing project (yay!). I would then have a branch of the git repo on my computer so that whatever mistakes I do doesn't affect the current working parts of the project.
+2. What is a pull request?
+It is to pull whatever changes on the main branch onto my repo. This way, I'll have the most updated version of the project and I can modify my code accordingly.
